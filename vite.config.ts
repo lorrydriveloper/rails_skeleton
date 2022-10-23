@@ -5,5 +5,5 @@ import StimulusHMR from 'vite-plugin-stimulus-hmr'
 
 export default defineConfig({
   clearScreen: false,
-  plugins: [RubyPlugin(), StimulusHMR(), FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 300 })],
+  plugins: [RubyPlugin(), StimulusHMR(), FullReload(['config/routes.rb', 'app/views/**/*', 'app/javascript/controllers/**/*'], { delay: 300 })],
 })
